@@ -26,6 +26,11 @@ namespace SimpleCalculator
                 case "/":
                     result = argFirstNumber / argSecondNumber;
                     break;
+                case "modulo":
+                case "%":
+                    result = argFirstNumber % argSecondNumber;
+                    break;
+
                 default:
                     throw new InvalidOperationException("Specified operation is not recognized.");
             }
