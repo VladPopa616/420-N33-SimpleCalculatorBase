@@ -28,9 +28,14 @@ namespace SimpleCalculator
 
                 Console.WriteLine(result);
 
-            } catch (Exception ex)
+            } catch (System.ArgumentException e)
             {
-                Console.WriteLine(ex.Message);
+                Console.WriteLine("Please enter a number");
+            }
+
+            catch (System.InvalidOperationException e)
+            {
+                Console.WriteLine("Please enter a valid operator such as +,-,*,/ or write it out.");
             }
         }
     }
