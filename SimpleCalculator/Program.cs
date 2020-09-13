@@ -13,6 +13,9 @@ namespace SimpleCalculator
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("This program is a console calculator");
+            Console.WriteLine("The program takes in 2 numbers and an operator");
+            Console.WriteLine("Please enter the numbers and operator to calculate the result...");
             try
             {
                 //Class to convert user input
@@ -28,6 +31,7 @@ namespace SimpleCalculator
                 double result = calculatorEngine.Calculate(operation, firstNumber, secondNumber);
 
                 Console.WriteLine(firstNumber + operation + secondNumber + " = " +  result);
+                Console.WriteLine("Closing Calculator");
 
             } catch (System.ArgumentException e)
             {
